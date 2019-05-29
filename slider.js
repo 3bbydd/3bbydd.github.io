@@ -3,12 +3,11 @@
 
 
 $(function() {
-/*	window.onload = function() {
-	$('main').fadeOut(1);
+	window.onload = function() {
 	$('.master-img i').animate({
 		opacity: "0"
-	},4000);
- }*/
+	},3000);
+ }
     var master = $('.master-img img');
 		   	
       $('.thumbnails img').on("click",function() {
