@@ -1,0 +1,31 @@
+body{
+position:fixed;
+  text-align:center
+  
+  
+  
+}
+img{
+  position:relative;
+  width:32%;
+  margin:-3px;
+  padding:0;
+  border:1px solid #ffffff90
+}
+
+header{
+  color:#ffffff;
+  background:black;
+  padding:30px;
+  border-radius:30px;
+}
+header a{
+  display:inline-block;
+  font-size:30px;
+  
+  color:#ffffff ;
+  text-decoration:none;
+  background:black;
+  
+}
+
