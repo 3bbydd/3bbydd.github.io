@@ -81,7 +81,7 @@ $(this).addClass("visible").siblings().removeClass('visibled');
 		$('.fa-chevron-left').click();
 	});      
 	$('header').on('click',function() {
-    var x = "https://3bbydd.github.io"
+    var x = "https://3bbydd.github.io";
   window.location = x;
 });
 
