@@ -10,16 +10,13 @@ h2{
   text-align:center;
   margin:3px auto;
   padding:30px;
-  background:#00000090;border-radius:30px
-  
+  background:#00000090;
+  border-radius:30px; 
 }
 h2 a{
   text-decoration:none;
   color:#fff;
-  
-  
 }
-
    .gallery{
 		 position:absolute;
         width:308px;
