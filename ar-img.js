@@ -14,3 +14,8 @@ $('img').on('swiperight',function() {
   $(this).attr('src', bro);
   $(this).next().attr('src',me);
 })
+
+$('header').on('click',function() {
+    var x = "https://3bbydd.github.io";
+  window.location = x;
+});
