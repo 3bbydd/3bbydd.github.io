@@ -1,0 +1,28 @@
+body{
+	background:skyblue;
+	text-align:center
+}
+h1{
+	background:#ffffff90;
+	width:200px;
+	margin:auto;
+	padding:30px;
+	border-radius:30px;
+}
+
+main > div{
+	width:200px;
+	height:200px;
+	margin: 13px auto;
+	background: darkgreen;
+	cursor:pointer;
+	line-height:200px;
+	font-size:30px;
+	
+	font-weight:bold ;
+	border-radius:50%
+}
+main div a{
+	text-decoration:none;
+	color:lightyellow;
+}
