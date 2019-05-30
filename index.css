@@ -10,7 +10,7 @@ h1{
 	border-radius:30px;
 }
 
-main > div{
+main a{
 	display:inline-block;
 	width:200px;
 	height:200px;
@@ -22,8 +22,6 @@ main > div{
 	float:right;
 	font-weight:bold ;
 	border-radius:50%
-}
-main div a{
-	text-decoration:none;
+		text-decoration:none;
 	color:lightyellow;
 }
