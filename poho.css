@@ -1,0 +1,36 @@
+body{
+  background:#00ppff30
+}
+
+
+.photos{
+  margin-top:50px;
+  position:relative;
+  z-index:1
+}
+.photos .photo{
+  width:300px;
+  height:300px;
+  position:absolute;
+  left:50%;
+  margin-left:-150px;
+  background:grey;
+  border-radius:3px;
+  min-height:300px;
+  cursor:pointer
+  
+  
+  
+  
+
+}
+i{
+  position:absolute;
+  width:60px
+  top:3px;
+  margin-left:-30px;
+  left:50%;
+  font-size:30px;
+  
+  color:skyblue
+}
