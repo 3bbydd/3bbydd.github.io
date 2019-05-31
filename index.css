@@ -48,3 +48,21 @@ main a{
       
   }
 }
+.load{
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background:#fff;
+  
+}
+.load img{
+  width:40vw;
+  position:absolute;
+  top:50%;
+  margin-top:-20vw;
+  left:50%;
+  margin-left:-20vw
+  
+}
