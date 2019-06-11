@@ -2,7 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 body{
-	height:10000px;
   direction:rtl;
   font-family: 'Open Sans', sans-serif;
 }
@@ -171,10 +170,7 @@ header .arrow i{
 /* الاشتراكات */
 .subscribe{
   background:url('images/sub.png');
-  background-size:cover;
- 
-  
-  
+  background-size:cover;  
 }
 
 .subscribe form{
@@ -189,7 +185,6 @@ header .arrow i{
   font-size:20px;
   border-radius:10px;
   position:relative;
-  
   border:none;
   font-size:14px
   
@@ -202,8 +197,7 @@ header .arrow i{
   color:#fff;
   border-radius:10px;
   margin-right:20px;
-  font-size:14px
-  
+  font-size:14px  
 }
 
 
