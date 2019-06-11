@@ -1,0 +1,303 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+	
+  direction:rtl;
+  font-family: 'Open Sans', sans-serif;
+}
+/* خواصنا  */
+*{
+  box-sizing:border-box
+}
+.container{
+  width:70%;
+  margin:auto
+}
+.overlay{
+  background:#31373daa;
+  width:100%;
+  height:100%
+}
+.table{
+  height:100%;
+  display:table
+}
+.table-row{
+  display:table-row
+}
+.text-center{
+  text-align:center
+}
+
+.upper{
+  text-transform:uppercase
+}
+.main-color{
+  color:#f7600e
+}
+.main-bg{
+  background-color:#f7600e
+}
+.clearfix{
+  clear:both
+}
+.hidden{
+  display: none
+}
+/*الترويسة */
+header {
+  background: url('images/header-bg.png');
+  background-size:cover;
+  color:#fff;
+  height:100vh
+}
+
+
+header .navbar{
+  overflow:auto;
+  padding:20px 0;
+  position:absolute;
+  top:0;
+  right:0;
+  width:100%;
+  font-size:2em
+}
+header .navbar .links{
+  float:left;
+  margin-left:10px;
+  
+  
+}
+header .navbar .links i{
+  margin-left:10px;
+  font-weight:800;
+  font-size:1em
+  
+  
+}
+
+header .intro h1{
+  margin:0;
+  font-weight:800;
+  font-size:50px;
+  
+}
+header .intro p{
+  margin:5px 0 40px;
+  line-height:1.9;
+  font-size:20px;
+  color:#e2e2e2
+}
+
+header .buttons button{
+ background:transparent;
+  padding:10px 0;
+  width:180px;
+  font-size:14px;
+  border: 1px solid #909090;
+  margin:0 8px;
+  border-radius:10px;
+  color:#fff
+  
+}
+header .buttons button:hover{
+  color:#fff;
+  background-color:#f7600e;
+  border: 1px solid #f7600e;
+  transition:all .5s linear
+  
+}
+  
+header .arrow {
+  position:absolute;
+  bottom:0;
+  right:0;
+  text-align:center;
+  width:100%;
+  padding:40px 0
+}
+header .arrow i{
+  border:2px solid ;
+  border-radius: 50%;
+  height:60px;
+  width:60px;
+  line-height:60px;
+  cursor:pointer
+}
+/*  المميزات  */
+
+
+
+.features{
+  padding:80px 0;
+  overflow:hidden
+}
+
+  .features .box{
+  width:22%;
+    float:right;
+    margin-left:4%
+   }
+  
+.features .box:last-of-type{
+ margin-left:0
+}
+    
+.features .box i{
+  border-radius:50%;
+  border: 3px solid #dddddd90;
+  
+ width:120px;
+  height:120px;
+  line-height:120px;
+  transition:all .5s ease-in-out;
+  cursor:pointer
+}
+
+.features .box i:hover{
+  background-color: #f7600e;
+  border: 3px solid #f7600e;
+  
+  color:#fff
+}
+
+.features .box h3{
+  text-transform:uppercase;
+  font-weight:normal;
+  color:#505050
+}
+
+
+.features .box p{
+  line-height:2;
+  color:#888
+}
+
+/* الاشتراكات */
+.subscribe{
+  background:url('images/sub.png');
+  background-size:cover;
+ 
+}
+
+.subscribe form{
+  padding:100px 0;
+  width:700px;
+  margin:auto;
+  text-align:center;
+  
+}
+.subscribe form input[type="email"]{
+  padding:9px;
+  width:320px;
+  font-size:20px;
+  border-radius:10px;
+  position:relative;
+  
+  border:none;
+  font-size:14px
+  
+  
+}
+.subscribe form input[type="button"]{
+  padding:10px;
+  width:200px;
+  border:none;
+  color:#fff;
+  border-radius:10px;
+  margin-right:20px;
+  font-size:14px
+  
+}
+/* أعمالنا */
+.our-work{
+  padding: 50px 0
+}
+.our-work h2{
+  font-weight: 500;
+  font-size: 35px;
+  margin-bottom: 20px
+}
+.our-work h2 ~ p{
+line-height: 2;
+margin: 10px 0 40px
+}
+.our-work .show-more{
+background: transparent;
+border: 1px solid #ccc;
+width:180px;
+padding: 10px;
+border-radius: 10px;
+margin-top: 20px;
+color: #555555;
+}
+.our-work .show-more:hover{
+  color:#fff;
+  background-color:#f7600e;
+  border: 1px solid #f7600e;
+  transition:all .5s linear
+  
+}
+.our-work .items-box {
+  overflow: hidden;
+}
+
+.our-work .items-box .item {
+float:right;
+width: 30%;
+overflow: hidden;
+margin-right: 1.33333%;
+margin-bottom: 12px;
+border-radius: 10px;
+position: relative;
+border-radius: 10px
+}
+.our-work .items-box .item:hover .over {
+display: block;
+}
+.our-work .items-box img{
+  border-radius: 10px
+}
+.our-work .item .over {
+  position: absolute;
+  top:0;
+  right:50%;
+  width: 300px;
+   margin-right: -150px;
+  height: 300px;
+  border-radius: 10px;
+  background:#f7600ecc;
+  color:#fff;
+  display: none;
+  transition: all .5s ease-in-out
+}
+.our-work .item .over h4{
+font-size: 24px;
+margin-top: 80px;
+margin-bottom: 0
+}
+
+.our-work .item  .over p{
+  margin-top: 10px;
+  margin-bottom: 50px;
+  line-height: 2;
+
+}
+.our-work .item  .over input{
+  padding: 3px;
+background: transparent;
+color:#fff;
+border: 1px solid;
+width: 180px;
+border-radius: 10px;
+transition: all .5s ease-in-out
+}
+.our-work .item  .over input:hover{
+color: #f7600ecc;
+background:#fff;
+
+}
+  
+  
+  
