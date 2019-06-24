@@ -3,14 +3,13 @@ $(function() {
   var wind     = $(window),  
       upper    = $('.upper-bar'),
       nav      = $('nav'),
-      carousel = $('.slider,.carousel-item');
+      carousel = $('.slider, .slider .carousel-item');
   
   carousel.height( wind.height() - (upper.innerHeight() + nav.innerHeight()));
 
 $(window).on('resize orientationchange',function() {
     carousel.height( wind.height() - (upper.innerHeight() + nav.innerHeight()));  
-});
-  
+});  
   
   $('.featured-work ul li').on('click',function() {
     $(this).addClass('active').siblings().removeClass('active');
@@ -23,14 +22,6 @@ $(window).on('resize orientationchange',function() {
       $('.shuffle-imgs .col-md').hide();
         $($(this).data('class')).show();
       
-    }
-    
-  });
-  
-  
-  
-  
-  
-  
-  
-  });
+    }   
+  }); 
+});
