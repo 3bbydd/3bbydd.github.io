@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ملاحظاتي</title>
+  <link rel="apple-touch-icon" href="https://findicons.com/files/icons/1938/xp_icandy_1/128/open_folder_green.png">
+  <style>
+    
+body{
+	background: #f4f0ec;
+	direction: rtl;
+	padding: 3px;
+    font-weight: Arial, Tahoma
+}
+
+main{
+	margin: 100px 15px;
+	border-left: 1px solid #ccc;
+    z-index: 2
+}
+    
+p{
+	padding: 20px;
+	margin: 5px 5px 5px 17.5px;
+	position: relative;
+	background: #fff;
+	border-radius: 4px;
+	white-space: pre;
+    font-weight: bold
+}
+    
+p:before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 10px;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	left: -24.5px;
+	background: #ccc
+	
+}
+    
+p:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 7px;
+	width: 0;
+	height: 0;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent #fff transparent;
+	border-style: solid;
+	left: -10px	
+}
+   
+hr{
+    display: block;
+    height: 1px;
+    border: 0; 
+	border-top: 1px solid #cccccc90;
+    margin: 1em 0
+}
+
+#popub{	
+	position: fixed;
+	width: 100%;
+	height: 100%;	
+    top: 0;
+	bottom: 0;
+	right: -1000px; 
+    transition: all .8s ease-in;
+    opacity: 0
+}
+
+#popub.active{
+    display: block;
+    opacity: 1;
+    right: 0;
+    transition: all .9s ease-out;
+     z-index: 10;
+}
+
+.container{
+	position: absolute;
+	width: 100%;
+	height: 400px;
+	top: calc(50% - 200px);
+	text-align: center
+}
+    
+textarea{
+    height: 200px;
+    width: 80vw;
+	padding: 20px 10px;
+	margin-left: auto;
+	margin-right: auto;
+    font-size: 20px;
+    border: 1px solid #ccc
+}
+  
+button{
+	display: block;
+	width: 120px;
+	height: 50px;
+    color: #f4f0ec;
+	background: #63ace5;
+	border-radius: 12px;
+	margin: 10px auto;
+	padding: 5px 5px 10px;
+    border: 1px solid #63ace5;
+    font-size: 25px
+}
+    
+button:hover{
+      background: #2a4d69;
+}
+    
+.fa-plus{
+    position: absolute;
+    font-size: 45px;
+   text-align: center;
+    font-weight: bold;
+	width: 50px;
+	height: 50px;
+    border-radius: 50%;
+	bottom: 50px;
+	left: calc(50% - 25px);
+	cursor: pointer;
+	color: #f4f0ec;
+	background-color: #85144b;
+	line-height: 49px;
+	transition: all .3s linear;
+	z-index: 11
+}
+    .fa-plus:hover{
+   background-color:crimson
+    }
+.fa-plus.active{
+-webkit-transform: rotate(135deg) scale(1.1);	
+transform: rotate(135deg) scale(1.1); 		
+}
+    
+#del {
+      position: absolute;
+      bottom: 50px;
+      left: 10px;
+      font-size: 50px
+    }
+    
+ </style> 
+</head>  
+<body> 
+  <main>
+   
+  </main>
+  <div id="popub">
+    <div class="container">
+      
+      <textarea placeholder="ماذا يدور في رأسك">   
+      </textarea>
+      <button type="submit">
+	تم
+      </button>
+   </div>
+  </div>
+  <span class="fas fa-plus fa-2x fa-fw">+</span>  
+  <i id="del">&#128237;</i>
+  
+
+  <script>
+    window.onload = function(){
+      'use strict';
+var btn  = document.querySelector('button'),
+    main = document.querySelector('main'),
+    div  = document.getElementById('popub'),
+    del  = document.getElementById('del'),
+    span = document.querySelector('span'),
+    text = document.querySelector('textarea');
+          
+span.onclick = function() { 
+// التبديل بين اظهار الايقونة واظهار القائمة والعكس
+      this.classList.toggle('active');
+      div.classList.toggle('active');	 
+}; 
+     
+btn.onclick = function() { 
+  // إضافة النص المكتوب داخل براقراف مع خط افقي
+    if ( text.value !== "" ) {
+      main.insertAdjacentHTML("afterbegin" ,"<p>"+ text.value +"</p> <hr>");
+      // اخفاء القائمة وتصغير الايقونة
+      div.classList.remove('active');
+      span.classList.remove('active');
+      // إخفاء محتوى الكتابة
+      text.value = "";
+    }
+};  
+   
+del.onclick = function() { 
+        // حذف أول p و hr عند الغضط على الايقونة اليسرى
+      main.firstElementChild.remove();
+      main.firstElementChild.remove();
+    }
+ }
+  </script>
+</body>
+</html>
