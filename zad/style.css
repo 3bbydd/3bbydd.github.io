@@ -39,6 +39,7 @@ ol li{
   text-align:center;
   white-space: nowrap;
 }
+
 ol li:last-of-type{
   position:relative;
   margin-right:25%
@@ -102,3 +103,4 @@ ul li a:hover{
 .clearfix{
   clear:both
 }
+.right-align{text-align:right}
