@@ -36,7 +36,8 @@ ol li{
   float:right;
   line-height:100px;
    width:50%;
-  text-align:center
+  text-align:center;
+  white-space: nowrap;
 }
 ol li:last-of-type{
   position:relative;
