@@ -27,7 +27,7 @@ h1, h2{
   top: 40px
 }
 
-h2{
+h2 ,h1{
   background:#33333322;
   padding:20px;
   display:inline-block;
