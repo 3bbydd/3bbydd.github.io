@@ -27,12 +27,13 @@ h1, h2{
   top: 40px
 }
 
-h2 ,h1{
+h2{
   background:#33333322;
   padding:20px;
   display:inline-block;
   border-radius:10px
 }
-
+h1{
+background:#33333322;	
 img{
 	margin-top:300px}
