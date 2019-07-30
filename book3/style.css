@@ -37,7 +37,7 @@ header i{
   position:absolute;
   color:#f6f6f6;
   width:50px;
-  height:50px;
+  height:100px;
   font-size:35px;
   left:calc(50% - 25px);
   bottom:50px;
@@ -95,14 +95,14 @@ footer {
 
 
 @-webkit-keyframes upanddown {
-  0% {bottom: 50px;}
-  50% {bottom: 35px;}
-  90% {bottom: 50px;}
+  0% {bottom: 100px;}
+  50% {bottom: 85px;}
+  90% {bottom: 100px;}
 }
 
 /* Standard syntax */
 @keyframes upanddown {
-    0% {bottom: 50px;}
-  50% {bottom: 35px;}
-  90% {bottom: 50px;}
+    0% {bottom: 100px;}
+  50% {bottom: 85px;}
+  90% {bottom: 100px;}
 }
