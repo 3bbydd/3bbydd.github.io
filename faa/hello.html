@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <style>
+      body{
+        background:#e1e4e6;
+        text-align:center;
+        
+      }
+      h1{
+        height:300px;
+        line-height:300px;
+        margin-top:calc(50vh - 150px);
+        color:#1D5600;
+        font-size:50px;
+        transition:transform .3s linear;
+        animation: rotate 5s linear forwards
+        
+      }
+      @keyframes rotate{
+        0%{
+          transform:rotate(0deg)
+        }
+        50%{
+          transform:rotatey(180deg) scale(1.9)
+          
+        }
+        100%{
+          transform:rotatey(360deg) scale(1.3);
+          font-weight:bold
+        }
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1>
+      أهلا أوتار
+    </h1>
+  </body>
+</html>
