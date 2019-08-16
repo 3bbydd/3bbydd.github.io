@@ -22,8 +22,8 @@
     text-align: center;
     position: absolute;
     top:-40px;
-    left:calc(50% - 75px);
-    width:150px;
+    left:calc(50% - 100px);
+    width:200px;
     color:#fff;
     background: darkgreen;
     border-radius: 13px
