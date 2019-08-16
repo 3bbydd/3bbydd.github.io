@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center" id="thefree">بسم الله الرحمن الرحيم</h1>
+    </header>
+    <section class="thefir" >
+        <div class="container">
+            <h2 class="cont-head">النصوص</h2>
+            <h1>header 1</h1>
+            <h2>header 2</h2>
+            <h3>header 3</h3>
+            <h4>header 4</h4>
+            <h5>header 5</h5>
+            <h6>header 6</h6>
+            <hr>
+            <p title="السطر الأول  والثاني" dir="rtl"> 
+                <span>
+                     السطر الأول
+                </span>
+            <br> السطر الثاني
+            </p>
+          
+
+        </div>
+    </section>
+    <section class="thefir">
+      <div class="container img-cont">
+            <h2 class="cont-head">الصور</h2>
+            <img class="net" src="images\img-01.jpg" alt="photo">
+      </div>   
+    </section>
+    <section>
+        <div class="container">
+
+                <h2 class="cont-head">الروابط</h2>
+
+       <p dir="rtl">رابط موقع <a href="https://www.google.com" target="blank">قوقل</a>
+    <br>
+            رابط موقع <a href="http://twitter.com" target="_self">تويتر</a> <br>
+            رابط موقع <a href="https://apple.com" title="apple">أبل</a><br>
+            رابط إلى <a href="#thefree">رأس الصفحة</a>
+</p> 
+        <!-- comment -->
+    </div>  
+    </section>
+    <section class="lists">
+        <div class="container">
+            <h2 class="cont-head"> القوائم</h2>
+            <h2>قائمة غير مرقمة</h2>
+            <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>js
+                    <ul>
+                        <li>jquery
+                            <ol>
+                                <li>v1</li>
+                                <li>v2</li>
+                            </ol>
+                        </li>
+                        <li>dojo</li>
+                        <li>mootools</li>
+                    </ul> </li>
+            </ul>
+            <hr>
+            <h2>قائمة مرقمة</h2>
+            <ol >
+                    <li>learn html
+                        <ul>
+                            <li>html 1</li>
+                            <li>html 2</li>
+                        </ul>
+                    </li>
+                    <li>learn css</li>
+                    <li>learn js </li>
+            </ol>
+            <hr>  
+            <h2>قائمة وصفية</h2>
+            <dl>
+                <dt>html</dt>
+                <dd> good   </dd>
+                <dd>easy</dd>
+                <dd>useful</dd>
+                <dt>css</dt>
+                <dd> big   </dd>
+                <dd>easy</dd>
+                <dd>useful</dd>
+            </dl>
+    </div>
+    </section>
+    <section dir="rtl" style="text-align: center">
+        <div class="container">
+                <h2 class="cont-head"> التحكم بالنصوص</h2>
+        <p>
+            <strong>نص مهم</strong>
+            <br>
+            <b>نص عريض</b>
+            <br>
+            <small>
+                نص صغير
+            </small>
+            <br>
+            <i>نص مائل</i>
+            <br>
+            <em>نص مؤثر</em>
+
+        </p>
+        </div>
+    </section>
+    <section>
+            <div class="container">
+                <h2 class="cont-head"> تكملة  </h2>
+                <blockquote>
+                        this is ablockquote this is ablockquotethis is ablockquote this is ablockquotethis is ablockquote this is ablockquote this 
+                </blockquote>  
+                <q>
+                    this is quate
+                </q>  
+                
+                <p>
+                    هذه <mark>الكلمة</mark> عليها علامة
+                </p>
+                <p>
+                   
+                    هذه 
+                    <del>الكلمة</del>
+                     خطأ 
+                    </p>
+                    <p>
+                        وهذه <ins>الكلمة</ins> صحيحة
+                    </p>
+                    <p>
+                            هذه  <sup> الكلمة </sup>مرتفعة
+                    </p>
+                    <p>
+                        هذه  <sub> الكلمة </sub>منخفضة
+                    </p>
+                </div>
+        </section>
+        <section>
+            <div class="container">
+                <br>
+                <h2 class="cont-head"> النماذج  </h2>
+                <form name="register" dir="rtl">
+                    <fieldset>
+                        <legend>المعلومات الشخصية</legend>
+                            <label for="name">اسم المستخدم</label>
+                    
+                            <input type="text" id="name" placeholder="الاسم" >
+                            <br>
+                            <label for="pass">كلمة المرور</label>
+                            <input type="password" id="pass" placeholder="الرقم السري" maxlength="10" >
+                            <br>
+                            <input type="hidden">
+                            <br>
+                            <input type="checkbox" id="check" id="">
+                            <label for="check"> تذكرني</label>
+                            
+                    <br>
+                    <label for="file">رفع الملفات</label>
+                    <input id="file" type="file">
+                    <br>
+                  
+                    <input id="photo" type="image" src="https://via.placeholder.com/100/red">
+                    <br>
+                    <input type="reset" value="إعادة تعيين">
+                    <input type="submit" value="تسجيل الدخول">
+
+
+                    </fieldset>
+                
+           
+                </form>
+   
+                <br>
+                <form dir="rtl">
+                    <fieldset>
+                        <legend> أخرى</legend>
+                  
+                        <input type="button" name="hello" value="تحية" onclick="sayHello()">
+                        <br><br>
+                        <label>ما هي شركتك المفضلة</label>
+                        <br>
+                        <input type="radio" name="phone" value="apple">أبل<br>
+                        <input type="radio" name="phone" value="samsung">سامسونج<br>
+                        <input type="radio" name="phone" value="huawei">هواوي<br>
+
+               <br>
+                <textarea rows="6" cols="12" readonly >
+                        لا يمكنك الكتابة هنا
+                </textarea>
+                <br>
+                <input type="submit" value="تسجيل">
+            </fieldset>
+                </form>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <form dir="rtl">
+                    <label>  </label>
+                    <select required name="my-select" size="1" >
+                            <option disabled selected>الموعد يوم:</option>
+                        <optgroup label="أيام العمل" >
+                            
+                            <option value="1" >الأحد</option>
+                            <option value="2">الإثنين</option>
+                            <option value="3">الثلاثاء</option>
+                            <option value="4">الأربعاء</option>
+                           
+                        </optgroup>
+                        <optgroup label="أيام العطلة">
+                            <option value="5">الخميس</option>
+                            <option value="6" disabled>الجمعة</option>
+                            <option value="7">السبت</option>
+                                                                                            
+                        </optgroup>
+
+                    </select>
+
+
+
+                </form>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2 class="cont-head">إطار</h2>
+                <h2 style="text-align: center">جريدة الرياض</h2>
+                <iframe src="http://www.alriyadh.com/" width="100%" height="300" 
+                
+               ></iframe>
+            </div>
+        </section>
+        <section>
+            <div class="container " dir="rtl">
+                <h2 class="cont-head">الجداول</h2>
+              
+            </div>
+        </section>
+        <section>
+            <div class="container" dir="auto">
+                <h2 class="cont-head">أخرى</h2>
+                <p>مسافة قبل هذه &nbsp;&nbsp;&nbsp;&nbsp; الكلمة</p><br>
+                <p>
+                    &lt; &gt; <br>
+                    
+                </p>
+                <code>< ></code>
+                <p>
+                    &cent; &pound; &yen; &euro; <br>
+                &copy;<br>
+            &reg;            </p>
+            </div>
+        </section>
+
+
+
+
+
+
+        <script src="script.js"></script>
+</body>
+</html>
