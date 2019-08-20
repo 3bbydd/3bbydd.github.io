@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" >
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <style>
+    
+    main{
+      float:right;
+      text-align:center
+    }
+  div{
+	
+    position:relative;
+	margin: 0 auto 0;
+    width:300px;
+    
+   
+    padding:20px
+}
+body{
+  font-size:2em;
+  text-align:center;
+  
+}
+
+meter{
+  position:absolute;
+  top:13px;
+  margin: 10px 20px 0;
+  
+  
+}
+
+button{
+  margin-top:100px;
+  background:    #74a7ff;
+background:    linear-gradient(#74a7ff, #2c0977);
+border:        2px solid #556699;
+border-radius: 1000px;
+box-shadow:    3px 3px #d6d6d6;
+padding:       15px 17px;
+color:         #ebebeb;
+display:       inline-block;
+font:          normal bold 24px/1 "Ubuntu", sans-serif;
+text-align:    center;
+text-shadow:   1px 1px #000000;
+}
+    
+ 
+    meter::-webkit-meter-optimum-value {
+  box-shadow: 0 5px 5px -5px #999 inset;
+  background-image: linear-gradient(
+    90deg, 
+    #8bcf69 5%, 
+    #e6d450 5%,
+    #e6d450 15%,
+    #f28f68 15%,
+    #f28f68 55%,
+    #cf82bf 55%,
+    #cf82bf 95%,
+    #719fd1 95%,
+    #719fd1 100%
+  );
+  background-size: 100% 100%;
+}
+    
+    meter{
+      width:300px
+    }
+    meter::-webkit-meter-optimum-value {
+  -webkit-transition: width .5s;
+}
+
+  </style>
+</head>
+<body>
+  <main>
+  <button onclick ="hitme()">
+    اضغطني
+  </button>
+<!-- partial:index.partial.html -->
+ <div>١٠٪<meter value="0" max="200" data-max="20"></meter>
+</div>
+	<div>٢٠٪<meter  value="0" max="100" data-max="20"></meter>
+</div>
+<div>٣٠٪<meter value="0" max="100" data-max="30"></meter>
+</div>
+<div> ٤٠٪
+  <meter  value="0" max="100" data-max="40"></meter>
+
+	</div>
+<div>	٥٠٪<meter  value="0" max="100" data-max="50"></meter></div>
+  <div> ٦٠٪<meter value="0" max="100" data-max="60"></meter></div>
+<div>٧٠٪<meter value="0" max="100" data-max="70"></meter></div>
+<div>٨٠٪<meter value="0" max="100" data-max="80"></meter></div>
+<div> ٩٠٪<meter  value="0" max="100" data-max="90"></meter></div>
+<div> ١٠٠٪<meter  value="0" max="100" data-max="100"></meter></div>
+    </main>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+  <script>
+  function hitme() {
+  
+
+for (var i =0 ; i < $('meter').length ; i++ ) {
+    var tthes = $('meter').eq(i);
+    var def =( parseInt(tthes.data('max')) - parseInt(tthes.attr('value'))) /20;
+  tthes.data('def',def );
+  
+}
+ 
+
+  setInterval(function(){
+    for ( var i = 0 ; i < $('meter').length ; i++ ){
+	var tthes = $('meter').eq(i);
+    if (tthes.attr('value') < tthes.data('max')) {
+     tthes.attr('value', parseInt(tthes.attr('value')) + tthes.data('def')); 
+      
+ 
+    } else {
+      clearInterval();
+  
+    }
+		
+   }
+}, 100)
+              
+  
+}
+
+  </script>
+
+</body>
+</html>
