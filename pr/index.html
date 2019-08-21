@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <style>
+
     section{
       text-align: center
     }
@@ -17,6 +18,8 @@
   </style>
 </head>
 <body>
+<br>
+<br>
   <section>
 
   
@@ -52,11 +55,25 @@
           
             حساب العمر بالايام
         </h3>
+        <hr>
         <form oninput="result.value =' عمرك بالأيام: ' + age.value * days.value + ' يوم '">
-          <input name="age" type="number" placeholder="العمر .." >
+          <input min="0" name="age" type="number" placeholder="العمر .." >
           <input name="days" value="360" hidden type="number" >
           <br><br>
             <output name="result"></output> 
+        </form>
+        <hr>
+        <form oninput="out.value = color.value">
+          <input type="color" name="color" id="">
+          <br>
+          <output name="out"></output>
+
+        </form>
+        <hr>
+        <form oninput="out.value = ran.value">
+          <input type="range" name="ran" min="0" max="30">
+          <br>
+          <output name="out"></output>
         </form>
       </section>
 </section>
