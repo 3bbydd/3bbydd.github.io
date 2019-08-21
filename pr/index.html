@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    section{
+      text-align: center
+    }
+   input,.output output{
+        height:30px;
+        font-size:25px;
+        width:150px
+      } 
+  </style>
+</head>
+<body>
+  <section>
+
+  
+  <h2>فاكهتك المفضلة</h2>
+  <form>
+<input list="fruites">
+  <datalist id="fruites">
+      <option value="عنب"></option>
+      <option value="تفاح"></option>
+      <option value="موز"></option>
+      <option value="تمر"></option>
+      <option value="رمان"></option>
+      <option value="افوكادو"></option>
+      <option value="أناناس"></option>
+      <option value="برتقال"></option>
+      <option value="بطيخ "></option>
+      <option value="توت"></option>
+      <option value="بندق"></option>
+      <option value="تين"></option>
+      <option value="جوافة"></option>
+      <option value="جوز"></option>
+      <option value="ليمون"></option>
+      <option value="كيوي"></option>
+      <option value="مانجا"></option>
+      <option value="مشمش"></option>
+    
+  </datalist>
+</form>
+</section>
+<section class="output">
+    <section>
+        <h3>
+          
+            حساب العمر بالايام
+        </h3>
+        <form oninput="result.value =' عمرك بالأيام: ' + age.value * days.value + ' يوم '">
+          <input name="age" type="number" placeholder="العمر .." >
+          <input name="days" value="360" hidden type="number" >
+          <br><br>
+            <output name="result"></output> 
+        </form>
+      </section>
+</section>
+</body>
+</html>
