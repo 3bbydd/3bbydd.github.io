@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <style>
+      body, html {
+        text-align:center;
+        color:#006080;
+        
+      }
+     main, div{
+        margin: 30vh auto;
+        text-align:center;
+        font-size:150px;
+        display:inline-block;
+        width:100%
+      }
+    div  span{
+        display:inline-block;
+        animation: rot 6s ease infinite
+        
+      }
+      span:first-of-type{
+       animation-delay:.1s 
+      }
+      span:nth-of-type(2){
+        animation-delay:.3s
+      }
+      span:nth-of-type(3){
+        animation-delay:.5s
+      }
+      span:nth-of-type(4){
+        animation-delay:.7s
+      }
+      
+     span:last-of-type{
+        animation-delay:.9s
+      }
+      @keyframes rot {
+        0%{
+          transform:rotatex(0deg);
+          
+        
+         
+        }
+        100%{
+          transform:rotatex(360deg);
+          
+        }
+        
+      }
+      main span{
+        display:inline-block;
+        animation: rot2 6s ease infinite
+      }
+      @keyframes rot2 {
+        0%{
+          transform:rotaty(0deg);
+          
+        
+         
+        }
+        100%{
+          transform:rotatey(360deg);
+          
+        }
+        
+      }
+    </style>
+    <!--<link rel="stylesheet" href="style.css"/>-->
+    <!--<script defer src="script.js"></script>-->
+  </head>
+  <body>
+   <div>
+     
+     <span>A</span><span>w</span><span>t</span><span>a</span><span>r</span>
+    </div> 
+    <h2>
+     &#x1F447; 
+    </h2>
+    
+       <main>
+ 	
+
+     <span>A</span><span>w</span><span>t</span><span>a</span><span>r</span>
+    </main> 
+  </body>
+</html>
